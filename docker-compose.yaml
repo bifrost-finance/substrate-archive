@@ -22,7 +22,7 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 123 # change me
-      POSTGRES_DB: polkadot # default db name
+      POSTGRES_DB: bifrost # default db name
     networks:
       default:
         ipv4_address: 172.10.10.3
@@ -30,6 +30,7 @@ services:
       # this volume executes a script that creates databases 'kusama' and 'test' in addition to 'polkadot'
       - ./scripts/docker_postgres_init.sql:/docker-entrypoint-initdb.d/docker_postgres_init.sql
       - ./scripts/postgresql.conf:/etc/postgresql.conf
+
   pgadmin:
     image: dpage/pgadmin4
     environment:

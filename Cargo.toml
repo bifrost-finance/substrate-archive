@@ -7,7 +7,22 @@ members = [
   "work-queue/integration_tests/",
   "test-common",
   "test-common/test-wasm",
-  "bin/polkadot-archive",
-  "bin/node-template-archive"
+#  "bin/polkadot-archive",
+#  "bin/node-template-archive",
+  "bin/bifrost-archive"
 ]
+
+[patch.crates-io]
+zenlink-protocol = { git = "https://github.com/zenlinkpro/Zenlink-DEX-Module", rev = "0a96d66fba0b8173381ff5d03a33bb7943b4f457"}
+zenlink-protocol-rpc = { git = "https://github.com/zenlinkpro/Zenlink-DEX-Module", rev = "0a96d66fba0b8173381ff5d03a33bb7943b4f457" }
+zenlink-protocol-runtime-api = { git = "https://github.com/zenlinkpro/Zenlink-DEX-Module", rev = "0a96d66fba0b8173381ff5d03a33bb7943b4f457" }
+
+orml-traits = { git = "https://github.com/open-web3-stack/open-runtime-module-library", rev = "5ba42f532b72d71a28aaa18421855de003b9ca71" }
+orml-currencies = {git = "https://github.com/open-web3-stack/open-runtime-module-library", rev = "5ba42f532b72d71a28aaa18421855de003b9ca71" }
+orml-tokens = { git = "https://github.com/open-web3-stack/open-runtime-module-library", rev = "5ba42f532b72d71a28aaa18421855de003b9ca71" }
+orml-xtokens = { git = "https://github.com/open-web3-stack/open-runtime-module-library", rev = "5ba42f532b72d71a28aaa18421855de003b9ca71" }
+orml-unknown-tokens = { git = "https://github.com/open-web3-stack/open-runtime-module-library", rev = "5ba42f532b72d71a28aaa18421855de003b9ca71" }
+orml-xcm = { git = "https://github.com/open-web3-stack/open-runtime-module-library", rev = "5ba42f532b72d71a28aaa18421855de003b9ca71" }
+orml-xcm-support = { git = "https://github.com/open-web3-stack/open-runtime-module-library", rev = "5ba42f532b72d71a28aaa18421855de003b9ca71" }
+orml-benchmarking = { git = "https://github.com/open-web3-stack/open-runtime-module-library", rev = "5ba42f532b72d71a28aaa18421855de003b9ca71" }
 
